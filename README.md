@@ -103,7 +103,7 @@ tokenizer.pad_token = tokenizer.eos_token
 ppo_trainer = PPOTrainer(config, model, ref_model, tokenizer, dataset=dataset)
 ```
 
-> See `scripts/train_ppo.py` for the complete training script.
+
 
 ---
 
@@ -145,7 +145,7 @@ dataset = load_dataset("lvwerra/stack-exchange-paired", split="train")
 dataset = dataset.map(return_prompt_and_responses, batched=True, remove_columns=dataset.column_names)
 ```
 
-> See `scripts/train_dpo.py` for the complete DPO training script.
+
 
 ---
 
