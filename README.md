@@ -20,7 +20,6 @@ Both methods help fine-tune language models using reinforcement learning techniq
 - [Prerequisites](#prerequisites)
 - [GPT-2 PPO Fine-Tuning](#gpt-2-ppo-fine-tuning)
 - [Llama 2 DPO Fine-Tuning](#llama-2-dpo-fine-tuning)
-- [Directory Structure](#directory-structure)
 - [References](#references)
 - [Contributing](#contributing)
 
@@ -149,18 +148,6 @@ dataset = dataset.map(return_prompt_and_responses, batched=True, remove_columns=
 > See `scripts/train_dpo.py` for the complete DPO training script.
 
 ---
-
-## Directory Structure
-
-```
-llm-preference-finetuning/
-│── data/                   # Training datasets for GPT-2 and Llama 2
-│── models/                 # Saved checkpoints and trained models
-│── scripts/
-│   ├── train_ppo.py        # GPT-2 PPO fine-tuning script
-│   ├── train_dpo.py        # Llama 2 DPO fine-tuning script
-│── README.md               # This file
-```
 
 ---
 
